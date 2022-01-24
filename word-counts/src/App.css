@@ -1,0 +1,25 @@
+body{
+
+  counter-reset: my-sec-counter;
+
+}.App {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+
+.display::before {
+  counter-increment: my-sec-counter;
+  content: "" counter(my-sec-counter) " ";
+}
+
+table th {
+  background-color: red !important;
+}
+
+/* table {
+  display: grid !important;
+  grid-auto-columns: auto auto auto !important;
+
+} */
